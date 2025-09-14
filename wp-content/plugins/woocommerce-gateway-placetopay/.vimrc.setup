@@ -1,0 +1,21 @@
+" \ '/var/www/html/wordpress/5.3/wp-content/plugins/woocommerce-gateway-placetopay': $PWD,
+" \ '/var/www/html/wordpress/5.4/wp-content/plugins/woocommerce-gateway-placetopay': $PWD,
+" \ '/var/www/html/wordpress/5.5/wp-content/plugins/woocommerce-gateway-placetopay': $PWD,
+" \ '/var/www/html/wordpress/5.6/wp-content/plugins/woocommerce-gateway-placetopay': $PWD,
+" \ '/var/www/html/wordpress/5.7/wp-content/plugins/woocommerce-gateway-placetopay': $PWD,
+" \ '/var/www/html/wordpress/5.8/wp-content/plugins/woocommerce-gateway-placetopay': $PWD,
+" \ '/var/www/html/wordpress/5.9/wp-content/plugins/woocommerce-gateway-placetopay': $PWD,
+" \ '/var/www/html/wordpress/6.0/wp-content/plugins/woocommerce-gateway-placetopay': $PWD,
+" \ '/var/www/html/wordpress/6.1/wp-content/plugins/woocommerce-gateway-placetopay': $PWD,
+" \ '/var/www/html/wordpress/6.2/wp-content/plugins/woocommerce-gateway-placetopay': $PWD,
+" \ '/var/www/html/wordpress/6.3/wp-content/plugins/woocommerce-gateway-placetopay': $PWD,
+" \ '/var/www/html/wordpress/6.4/wp-content/plugins/woocommerce-gateway-placetopay': $PWD,
+" \ '/var/www/html/wordpress/6.5/wp-content/plugins/woocommerce-gateway-placetopay': $PWD,
+
+" ONE for time! and Neovide doesnt works :(
+            " \ '/var/www/html/wordpress/5.3/wp-content/plugins/woocommerce-gateway-placetopay': $PWD,
+let g:vdebug_options.path_maps = {
+            \ '/var/www/html/wordpress/6.5/wp-content/plugins/woocommerce-gateway-placetopay': $PWD,
+            \ }
+
+call Message('Extra setup loaded.', !get(v:, 'vim_did_enter', !has('vim_starting')))

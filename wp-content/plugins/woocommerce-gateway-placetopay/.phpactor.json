@@ -1,0 +1,4 @@
+{
+    "$schema": "/home/freddie/.vim/plugged/phpactor/phpactor.schema.json",
+    "php_code_sniffer.enabled": false
+}

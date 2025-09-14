@@ -1,0 +1,10 @@
+# Ignorar archivos de configuración y subidas
+wp-config.php
+.htaccess
+/wp-content/uploads/
+
+# Otros archivos a ignorar
+.DS_Store
+*.log
+.vscode/
+node_modules/

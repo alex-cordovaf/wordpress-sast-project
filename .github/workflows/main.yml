@@ -1,0 +1,17 @@
+jobs:
+  snyk_scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del código
+        uses: actions/checkout@v2
+
+      - name: Instalar Snyk
+        run: npm install -g snyk
+
+      - name: Ejecutar Snyk para el proyecto
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }} # Aquí se usa el secreto
+        run: |
+          snyk auth ${{ secrets.SNYK_TOKEN }} # Autenticación con el token
+          snyk test # Analiza las dependencias
+          snyk code test # Analiza el código fuente (SAST)
